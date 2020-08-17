@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='css/style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+    <h1 id="title">Connect Four</h1>
+    <div id="game">
+        <table >
+            <tr>
+                <td><p class="top" id="0" onclick="myFunction(this)" >□</p></th>
+                <td><p class="top" id="1" onclick="myFunction(this)" >□</p></th>
+                <td><p class="top" id="2" onclick="myFunction(this)" >□</p></th>
+                <td><p class="top" id="3" onclick="myFunction(this)" >□</p></th>
+                <td><p class="top" id="4" onclick="myFunction(this)" >□</p></th>
+                <td><p class="top" id="5" onclick="myFunction(this)" >□</p></th>
+                <td><p class="top" id="6" onclick="myFunction(this)" >□</p></th>
+            </tr>
+            <tr>
+                <td><p id="7"  >□</p></th>
+                <td><p id="8"  >□</p></th>
+                <td><p id="9"  >□</p></th>
+                <td><p id="10"  >□</p></th>
+                <td><p id="11"  >□</p></th>
+                <td><p id="12"  >□</p></th>
+                <td><p id="13"  >□</p></th>
+            </tr>
+            <tr>
+                <td><p id="14"  >□</p></th>
+                <td><p id="15"  >□</p></th>
+                <td><p id="16"  >□</p></th>
+                <td><p id="17"  >□</p></th>
+                <td><p id="18"  >□</p></th>
+                <td><p id="19"  >□</p></th>
+                <td><p id="20"  >□</p></th>
+            </tr>
+            <tr>
+                <td><p id="21"  >□</p></th>
+                <td><p id="22"  >□</p></th>
+                <td><p id="23"  >□</p></th>
+                <td><p id="24"  >□</p></th>
+                <td><p id="25"  >□</p></th>
+                <td><p id="26"  >□</p></th>
+                <td><p id="27"  >□</p></th>
+            </tr>
+            <tr>
+                <td><p id="28"  >□</p></th>
+                <td><p id="29"  >□</p></th>
+                <td><p id="30"  >□</p></th>
+                <td><p id="31"  >□</p></th>
+                <td><p id="32"  >□</p></th>
+                <td><p id="33"  >□</p></th>
+                <td><p id="34"  >□</p></th>
+            </tr>
+            <tr>
+                <td><p id="35"  >□</p></th>
+                <td><p id="36"  >□</p></th>
+                <td><p id="37"  >□</p></th>
+                <td><p id="38"  >□</p></th>
+                <td><p id="39"  >□</p></th>
+                <td><p id="40"  >□</p></th>
+                <td><p id="41"  >□</p></th>
+            </tr>
+           
+          </table>
+          <div id="interface">
+              <h1 id="feedback">Lets' Play</h1>
+              <h3 id="errors"></h3>
+
+              <button onclick="newGame()" type="button">New Game</button>
+
+          </div>
+          <div id="setting">
+            <h1 id="difficulty" >Difficulty: Impossible</h1>
+
+            <button onclick="auto()" type="button">Auto</button>
+            <button onclick="impossible()" type="button">Impossible</button>
+
+          </div>
+          <div id="stats">
+            <h1 >Your Statistics</h1>
+            <h2 id="wins" >Wins:</h2>
+         
+            <h2 id="losses" >Losses:</h2>
+           
+            <h2 id="draws">Draws:</h2>
+         
+
+            <button onclick="clearHistory()" type="button">Clear History</button>
+
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

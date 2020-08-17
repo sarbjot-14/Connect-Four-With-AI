@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  server-calculations:
+    build: ./app
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 5001:80
