@@ -28,7 +28,7 @@ port 80 is being forwarded to 5001
 
 ## What is the overall goal of the project (i.e. what does it do, or what problem is it solving)?
 
-The goal is to create Connect Four (https://en.wikipedia.org/wiki/Connect_Four) game where you can play against the computer. You can choose between a "impossible" mode, which is still beatable or you can choose to play against "automatic" mode. The automatic mode changes difficulty to suit your playing style. It will play harder if you lose, and play easier if you are winning too much. This is so that the player can stay engaged and become a better player.
+The goal is to create Connect Four (https://en.wikipedia.org/wiki/Connect_Four) game where you can play against the computer. You can choose between a "impossible" mode, which is still beatable or you can choose to play against "automatic" mode. The automatic mode changes difficulty to suit your playing style. It will play harder if you win, and play easier if you are losing too much. This is so that the player can stay engaged and become a better player.
 
 
 ## Which languages did you use, and what parts of the system are implemented in each?
