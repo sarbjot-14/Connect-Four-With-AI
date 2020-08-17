@@ -22,6 +22,8 @@ port 80 is being forwarded to 5001
   * `pip install Flask`
 5. Run app
   * `python run.py`
+6. Visit web app at http://127.0.0.1:5000/
+
 
 
 ## What is the overall goal of the project (i.e. what does it do, or what problem is it solving)?
@@ -43,7 +45,7 @@ Communications between example.c and views.py uses SWIG. The C file (example.c) 
 
 
 
-##  Features should we be looking for when marking your project?
+##  Key features?
 
 The code is mainly split between three files:
 app/app/static/js/app.js
@@ -71,7 +73,6 @@ This code:
 app/example.c
 	- Log whether the human won lost or game resulted in draw using file I/O
 	- Read the history of wins/losses/draws
-		
 	- Calculate the difficulty the AI 
 		- Max difficulty, "impossible" mode is when AI uses 60 playouts, and very easy is 0 playouts
 		- When "auto" mode is on the playouts will be between 0-60, and decided based on the past 5 games
