@@ -1,8 +1,8 @@
 # Connect-Four-With-AI
 
-## Exactly what steps should be taken to get the project working, after getting your code? 
 
-### Two options
+
+### How to run
 #### Docker
 I used docker to run the project. Please use : "docker-compose up" in the the same directory as the docker compose file.
 
@@ -26,17 +26,21 @@ port 80 is being forwarded to 5001
 
 
 
-## What is the overall goal of the project (i.e. what does it do, or what problem is it solving)?
-
-The goal is to create Connect Four (https://en.wikipedia.org/wiki/Connect_Four) game where you can play against the computer. You can choose between a "impossible" mode, which is still beatable or you can choose to play against "automatic" mode. The automatic mode changes difficulty to suit your playing style. It will play harder if you win, and play easier if you are losing too much. This is so that the player can stay engaged and become a better player.
-
-
-## Which languages did you use, and what parts of the system are implemented in each?
-
-I used a client server model with a REST API. The server is written uses flask framework which is written in Python and the client side uses Javascript. I also do file I/O and some calculations with C on the server side.
+## Project Purpose
+* The goal is to create Connect Four (https://en.wikipedia.org/wiki/Connect_Four) game where you can play against the computer. 
+* You can choose between a "impossible" mode, which is still beatable or you can choose to play against "automatic" mode. 
+* The automatic mode changes difficulty to suit your playing style. 
+* It will play harder if you win, and play easier if you are losing too much. This is so that the player can stay engaged and become a better player.
 
 
-## What methods did you use to communicate between languages?
+## Architecture and Tech Stack
+
+* I used a client server model with a REST API. 
+* The server is written uses flask framework which is written in Python and the client side uses Javascript. 
+* I also do file I/O and some calculations with C on the server side.
+
+
+## Communication between languages?
 
 The client and server communicate using a REST API. Usually the client makes a post request to the server and the server takes the request does calculations and sends data back. The data is in JSON format. 
 
@@ -47,8 +51,8 @@ Communications between example.c and views.py uses SWIG. The C file (example.c) 
 
 ##  Key features?
 
-The code is mainly split between three files:
-app/app/static/js/app.js
+### The code is mainly split between three files:
+1. `app/app/static/js/app.js`
 This javascipt file is run on the client side.
 This code:
 	- Takes user input
@@ -57,7 +61,7 @@ This code:
 	- Stores current game state data
 	- Makes post requests to the server
 
-app/app/views.py
+2. `app/app/views.py`
 This is the server side code that mainly does the calculations so that the AI can choose the next move.
 This code:
 	- recieves/processes requests from the client (new game, a move, difficulty change)
@@ -70,7 +74,7 @@ This code:
 		- log and read the history of wins/losses/draws
 		- calculate the difficulty the AI should use 
 			
-app/example.c
+3. `app/example.c`
 	- Log whether the human won lost or game resulted in draw using file I/O
 	- Read the history of wins/losses/draws
 	- Calculate the difficulty the AI 
